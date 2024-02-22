@@ -1,0 +1,21 @@
+.appwrapper > div:nth-child(2) {
+  text-align: center;
+}
+.header {
+  text-align: center;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header > div {
+  height: 75%;
+  display: flex;
+}
+.header > div > img {
+  height: 100%;
+  background-color: unset;
+}
+.header > div > h1 {
+  padding: 0 10px 0 10px;
+}

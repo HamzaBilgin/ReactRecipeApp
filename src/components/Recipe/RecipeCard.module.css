@@ -1,0 +1,98 @@
+.recipeCardWrapper {
+  position: relative;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  perspective: 1000px;
+  transition: all 1s ease-in-out;
+  transform-style: preserve-3d;
+  cursor: pointer;
+}
+.recipeCardWrapper:hover {
+  transform: rotateY(180deg);
+}
+.cardFrond {
+  border-radius: 20px;
+  position: absolute;
+  background-color: bisque;
+  width: 600px;
+  height: 200px;
+  display: flex;
+  cursor: pointer;
+  backface-visibility: hidden;
+}
+.img {
+  height: 100%;
+  width: 200px;
+}
+.img img {
+  height: 100%;
+  width: 200px;
+  object-fit: cover;
+  border-radius: 20px 0 0 20px;
+}
+.info {
+  width: 400px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.info div {
+  width: 50%;
+  box-sizing: border-box;
+  padding: 10px;
+  display: flex;
+  justify-content: space-around;
+}
+.info div:not(:first-child) {
+  width: 50%;
+}
+.info div:first-child {
+  width: 100%;
+}
+.info div p {
+  margin: 0;
+  text-align: center;
+}
+/* .title {
+  grid-area: title;
+  font-size: 20px;
+  font-weight: bold;
+}
+.prepTime {
+  grid-area: prepTime;
+}
+.cookTime {
+  grid-area: cookTime;
+}
+.additionalTime {
+  grid-area: additionalTime;
+}
+.totalTime {
+  grid-area: totalTime;
+}
+.servings {
+  grid-area: servings;
+} */
+
+.cardBack {
+  width: 600px;
+  height: 200px;
+  margin: auto;
+  border-radius: 20px;
+  background-color: bisque;
+  position: absolute;
+  transform: rotateY(180deg);
+  backface-visibility: hidden;
+}
+.cardBack > div {
+  height: 50%;
+  overflow: hidden;
+  overflow-y: scroll;
+}
+.cardBack div:first-child > p {
+  margin: 0;
+  padding: 10px 10px 0 10px;
+}
+.cardBack div:first-child p:first-child {
+  text-align: center;
+}
