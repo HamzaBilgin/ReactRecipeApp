@@ -5,8 +5,8 @@ import { recipies } from "../../recipies.js";
 const RecipeList = () => {
   return (
     <div className={styles.recipeListWrapper}>
-      {recipies.map((recipe) => (
-        <RecipeCard recipies={recipe}></RecipeCard>
+      {recipies.map((recipe, index) => (
+        <RecipeCard recipies={recipe} key={index}></RecipeCard>
       ))}
     </div>
   );

@@ -84,3 +84,7 @@ const RecipeCard = (props) => {
 };
 
 export default RecipeCard;
+
+RecipeCard.propTypes = {
+  recipies: PropTypes.object,
+};
